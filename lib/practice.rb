@@ -1,10 +1,14 @@
-z = [10,5,3,7,19,1,3,10,-1,0]
+z = [10,5,3,7,19,1,3,10,]
 
   def find_min_value(array)
     index = 0
-    min_value = 100000000000
+    min_value = 0
+
     while index < array.length do
-      if min_value > array[index]
+      if array[index] == 0
+        min_value = array[index]
+
+      else  min_value > array[index]
         min_value = array[index]
       end
       index += 1
